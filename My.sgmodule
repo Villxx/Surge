@@ -1,10 +1,7 @@
-#!name=My
-#!desc=Emby,微信,百度,Netflix评分,boxjs,知乎替换
+#!name=My sgmodule
+#!desc=✨个人使用模块💕
 
 [Script]
-# EmbyPremiere
-EmbyPremiere.js = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/rartv/SurgeScript/main/EmbyPremiere/EmbyPremiere.js
-
 # 微信去广告
 http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
@@ -27,5 +24,23 @@ BoxJs = type=http-request,pattern=^https?://boxjs.net,script-path=https://raw.gi
 # 知乎（部分替换为手机百度 Quark 的 User-Agent）
 ^https?:\/\/www\.zhihu\.com header-replace User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/16C50 Quark/604.1 T7/10.3 SearchCraft/2.6.3 (Baidu; P1 8.0.0)
 
+[URL Rewrite]
+# Redirect Google Search Service
+^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
+
+# Redirect Google Maps Service
+^https?:\/\/(ditu|maps).google\.cn https://maps.google.com 302
+
+# Redirect HTTP to HTTPS
+^https?:\/\/(www.)?taobao\.com\/ https://taobao.com/ 302
+^https?:\/\/(www.)?jd\.com\/ https://www.jd.com/ 302
+^https?:\/\/(www.)?mi\.com\/ https://www.mi.com/ 302
+^https?:\/\/you\.163\.com\/ https://you.163.com/ 302
+^https?:\/\/(www.)?suning\.com\/ https://suning.com/ 302
+^https?:\/\/(www.)?yhd\.com\/ https://yhd.com/ 302
+
+# AbeamTV - api.abema.io
+^https?:\/\/api\.abema\.io\/v\d\/ip\/check - reject
+
 [MITM]
-hostname = %APPEND% mb3admin.com, mp.weixin.qq.com, security.wechat.com, weixin110.qq.com, *.baidu.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,  www.zhihu.com
+hostname = %APPEND% mb3admin.com, mp.weixin.qq.com, security.wechat.com, weixin110.qq.com, *.baidu.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,  www.zhihu.com, www.google.cn, api.abema.io
