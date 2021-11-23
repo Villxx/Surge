@@ -43,4 +43,4 @@ BoxJs = type=http-request,pattern=^https?://boxjs.net,script-path=https://raw.gi
 ^https?:\/\/api\.abema\.io\/v\d\/ip\/check - reject
 
 [MITM]
-hostname = %APPEND% mb3admin.com, mp.weixin.qq.com, security.wechat.com, weixin110.qq.com, *.baidu.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,  www.zhihu.com, www.google.cn, api.abema.io
+hostname = %APPEND% mp.weixin.qq.com, security.wechat.com, weixin110.qq.com, *.baidu.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com,  www.zhihu.com, www.google.cn, api.abema.io
