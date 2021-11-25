@@ -7,7 +7,7 @@ http-response ^https:\/\/xy-viva\.kakalili\.com\/api\/rest\/u\/vipVerifyReceipt 
 #VUE
 http-response https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitle\/prepare) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js
 #美颜相机
-myxj.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ABXYvvv/Surge/main/myxj.js,type=http-response,pattern=^https:\/\/api\.meiyan\.com\/iap\/verify\.json
+myxj.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ABXYvvv/Surge/main/myxj.js,type=http-response,pattern=^https:\/\/api\.meiyan\.com\/vip\/user_info\.json
 #myxj.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/myxj.js,type=http-response,pattern=^https:\/\/api\.meiyan\.com\/iap\/verify\.json
 #美图秀秀
 mtxx.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huduke/Hugo/main/javaScript/unlockVip/mtxx.js,type=http-response,pattern=^https:\/\/api\.xiuxiu\.meitu\.com\/v1\/user\/show\.json
