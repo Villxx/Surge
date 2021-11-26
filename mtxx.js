@@ -8,7 +8,7 @@ Surge
 [Script]
 myxj.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ABXYvvv/Surge/main/mtxx.js,type=http-response,pattern=^https:\/\/h5\.xiuxiu\.meitu\.com\/v1\/h5\/vip\/user_detail\.json
 [MITM]
-hostname: api.meiyan.com
+hostname: api.xiuxiu.meitu.com
 */
 
 var obj = JSON.parse($response.body);
