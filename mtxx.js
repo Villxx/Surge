@@ -18,9 +18,9 @@ obj = {
    "error_code": 0,
    "data": {
      "exchange_vip": 0,
-     "is_new_vipsub": 1,
+     "is_new_vipsub": 0,
      "show_auto_renew": 0,
-     "old_vip_type": 1,
+     "vip_type": 1,
      "desc": ""
    },
    "msg": "成功",
