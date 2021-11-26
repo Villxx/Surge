@@ -1,12 +1,12 @@
 /*
 QX
 [rewrite_local]
-^https:\/\/api\.xiuxiu\.meitu\.com\/v1\/vip\/price\.json url script-response-body https://raw.githubusercontent.com/ABXYvvv/Surge/main/myxj.js
+^https:\/\/api\.xiuxiu\.meitu\.com\/v1\/vip\/price\.json url script-response-body https://raw.githubusercontent.com/ABXYvvv/Surge/main/mtxx.js
 [MITM]
 hostname: api.meiyan.com
 Surge
 [Script]
-myxj.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ABXYvvv/Surge/main/myxj.js,type=http-response,pattern=^https:\/\/api\.xiuxiu\.meitu\.com\/v1\/vip\/price\.json
+myxj.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ABXYvvv/Surge/main/mtxx.js,type=http-response,pattern=^https:\/\/api\.xiuxiu\.meitu\.com\/v1\/vip\/price\.json
 [MITM]
 hostname: api.xiuxiu.meitu.com
 */
