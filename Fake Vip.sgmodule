@@ -2,19 +2,13 @@
 #!desc=破解
 
 [Script]
-#小影
-http-response ^https:\/\/xy-viva\.kakalili\.com\/api\/rest\/u\/vipVerifyReceipt requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
-#VUE
-http-response https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitle\/prepare) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js
+
 #美颜相机
 myxj.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ABXYvvv/Surge/main/myxj.js,type=http-response,pattern=^https:\/\/api\.meiyan\.com\/vip\/user_info\.json
 #myxj.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/myxj.js,type=http-response,pattern=^https:\/\/api\.meiyan\.com\/iap\/verify\.json
 #美图秀秀
 mtxx.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ABXYvvv/Surge/main/mtxx.js,type=http-response,pattern=^https:\/\/api\.xiuxiu\.meitu\.com\/v1\/vip\/price\.json
 #mtxx.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huduke/Hugo/main/javaScript/unlockVip/mtxx.js,type=http-response,pattern=^https:\/\/api\.xiuxiu\.meitu\.com\/v1\/user\/show\.json
-#轻颜相机
-ulike.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/ulike/ulike.js,type=http-response,pattern=^https:\/\/commerce-.*api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info
-#VSCO
-http-response ^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/\d+$  script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/vsco.js ,requires-body=true,tag=VSCO
+
 [MITM]
-hostname = %APPEND% xy-viva.kakalili.com, api.vuevideo.net, api.meiyan.com, api.xiuxiu.meitu.com, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, api.revenuecat.com
+hostname = %APPEND% api.meiyan.com, api.xiuxiu.meitu.com
