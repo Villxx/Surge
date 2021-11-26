@@ -20,7 +20,7 @@ obj = {
      "exchange_vip": 1,
      "is_new_vipsub": 1,
      "show_auto_renew": 0,
-     "old_vip_type": 1,
+     "old_vip_type": 0,
      "desc": ""
    },
    "msg": "成功",
