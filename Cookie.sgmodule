@@ -14,4 +14,4 @@
 //hostname=, wapside.189.cn:9001, daojia.jd.com
 
 [MITM]
-hostname = %INSERT% tieba.baidu.com, *.video.qq.com,  ms.jr.jd.com, me-api.jd.com, api.m.jd.com
+hostname = %INSERT% tieba.baidu.com, v.qq.com, *.video.qq.com, ms.jr.jd.com, me-api.jd.com, api.m.jd.com
