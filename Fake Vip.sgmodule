@@ -1,4 +1,4 @@
-#!name=MYXJ
+#!name=My Fake VIP
 #!desc=美颜相机VIP破解
 
 [Script]
@@ -8,4 +8,4 @@ myxj.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.c
 
 
 [MITM]
-hostname = %APPEND% api.meiyan.com, api.xiuxiu.meitu.com
+hostname = %APPEND% api.meiyan.com
