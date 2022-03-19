@@ -17,11 +17,7 @@ obj = {
    "degrade": 0,
    "error_code": 0,
    "data": {
-     "exchange_vip": 1,
-     "is_new_vipsub": 1,
-     "show_auto_renew": 1,
-     "vip_type": 1,
-     "desc": ""
+     "s": 0
    },
    "msg": "成功",
    "error": "Ok",
