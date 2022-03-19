@@ -1,7 +1,7 @@
 /*
 QX
 [rewrite_local]
-^https:\/\/h5\.xiuxiu\.meitu\.com\/v1\/h5\/vip\/user_detail\.json url script-response-body https://raw.githubusercontent.com/ABXYvvv/Surge/main/mtxx.js
+^https:\/\/api\.xiuxiu\.meitu\.com\/v1\/user\/show\.json url script-response-body https://raw.githubusercontent.com/ABXYvvv/Surge/main/mtxx.js
 [MITM]
 hostname: api.meiyan.com
 Surge
@@ -9,6 +9,10 @@ Surge
 myxj.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ABXYvvv/Surge/main/mtxx.js,type=http-response,pattern=^https:\/\/api\.xiuxiu\.meitu\.com\/v1\/user\/show\.json
 [MITM]
 hostname: api.xiuxiu.meitu.com
+
+失败，只有vip图标没实际功能
+mtxx.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ABXYvvv/Surge/main/mtxx.js,type=http-response,pattern=^https:\/\/api\.xiuxiu\.meitu\.com\/v1\/user\/show\.json
+#mtxx.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huduke/Hugo/main/javaScript/unlockVip/mtxx.js,type=http-response,pattern=^https:\/\/api\.xiuxiu\.meitu\.com\/v1\/user\/show\.json
 */
 
 var obj = JSON.parse($response.body);
@@ -24,7 +28,7 @@ obj = {
     "background_url": "https:\/\/xximg1.meitudata.com\/6531090532355802113.png",
     "last_update_time": 0,
     "vip_type": 1,
-    "identity_card": "165845214",
+    "identity_card": "",
     "portal_icon": "",
     "template_feed_count": 0,
     "is_live": 0,
@@ -56,7 +60,7 @@ obj = {
     "core": false,
     "has_permission": 0,
     "landmark_count": "0",
-    "age": 20,
+    "age": 22,
     "pendants": [
     ],
     "birthday": 631123200,
