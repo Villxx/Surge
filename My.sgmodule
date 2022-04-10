@@ -1,6 +1,10 @@
 #!name=My sgmodule
 #!desc=✨个人使用模块💕
 
+
+[General]
+force-http-engine-hosts = %APPEND% boxjs.net
+
 [Script]
 # 微信去广告
 http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
