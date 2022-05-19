@@ -13,4 +13,4 @@ notability.js = requires-body=1,max-size=0,script-path=https://raw.githubusercon
 B612kaji.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/612.js,type=http-response,pattern=https://user-kaji-api.b612kaji.com/v1/purchase/subscription/subscriber/status
 
 [MITM]
-hostname = %APPEND% api.meiyan.com, *.xiuxiu.meitu.com, notability.com, *.b612kaji.com
+hostname = %APPEND% api.meiyan.com, *.xiuxiu.meitu.com, notability.com, user-kaji-api.b612kaji.com
