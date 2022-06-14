@@ -2,7 +2,7 @@
 #!desc=WB
 
 [Script]
-wb.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Vill/Surge/main/wb.js,type=http-response,pattern=https://www.wodidashi.com/web/webApi/userext/visitor/getEraseCount
+wb.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Villxx/Surge/main/wb.js,type=http-response,pattern=https://www.wodidashi.com/web/webApi/userext/visitor/getEraseCount
 
 [MITM]
 hostname = %APPEND% *.wodidashi.com
