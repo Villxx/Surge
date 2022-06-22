@@ -11,9 +11,12 @@ mtxx.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.c
 notability.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/notability.js,type=http-response,pattern=https://notability.com/subscriptions
 # >B612咔叽
 B612kaji.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/612.js,type=http-response,pattern=https://user-kaji-api.b612kaji.com/v1/purchase/subscription/subscriber/status
+# > 流利说·阅读
+流利说·阅读 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/LiuLiShuo-YueDu.js,type=http-response,pattern=^https?:\/\/vira\.llsapp\.com\/api\/v\d\/\w+\/\w+$
+# > 英语阅读 
+英语阅读 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/englishread.js,type=http-response,pattern=^http:\/\/duoting\.tatatimes\.com\/tataeraapi\/api\.s\?h=QueryVipUser
 # >WPS解锁
 WPS解锁超级V = type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/users,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js,script-update-interval=0,max-size=0
 
-
 [MITM]
-hostname = %APPEND% api.meiyan.com, *.xiuxiu.meitu.com, notability.com, user-kaji-api.b612kaji.com, account.wps.cn
+hostname = %APPEND% api.meiyan.com, *.xiuxiu.meitu.com, notability.com, user-kaji-api.b612kaji.com, vira.llsapp.com, duoting.tatatimes.com, account.wps.cn
