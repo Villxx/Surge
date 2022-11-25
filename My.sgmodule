@@ -39,5 +39,12 @@ Rewrite: BoxJs = type=http-request,pattern=^https?:\/\/boxjs\.net,script-path=ht
 # AbeamTV - api.abema.io
 ^https?:\/\/api\.abema\.io\/v\d\/ip\/check - reject
 
+[Script]
+豆瓣网页优化
+茶杯狐 = type=http-response,pattern=^https://m.douban.com/movie/subject/.+,requires-body=1,max-size=0,script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/douban.js
+douban
+Libvio  = type=http-request,pattern=^https://m.douban.com/movie/subject/.+\?seen=\d,requires-body=0,max-size=0,script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/douban.js
+
+
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, security.wechat.com, weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.google.cn, api.abema.io
+hostname = %APPEND% mp.weixin.qq.com, security.wechat.com, weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.google.cn, api.abema.io, m.douban.com
