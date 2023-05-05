@@ -46,4 +46,4 @@ Libvio  = type=http-request,pattern=^https://m.douban.com/movie/subject/.+\?seen
 
 
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, security.wechat.com, weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.google.cn, api.abema.io, m.douban.com
+hostname = %APPEND% mp.weixin.qq.com, security.wechat.com, weixin110.qq.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.google.cn, api.abema.io, m.douban.com, boxjs.net
