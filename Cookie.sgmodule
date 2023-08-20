@@ -2,13 +2,8 @@
 #!desc=iOS Cookies 模块配置
 #!system=ios
 
-
 [Script]
-百度贴吧 = type=http-request,pattern=^https?:\/\/tieba\.baidu\.com\/?.? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js
 获取京东 = type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
-Rewrite: 腾讯视频 = type=http-request,pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
-Rewrite: 京东到家 = type=http-request,pattern=^https:\/\/daojia.jd.com/client(.*?)functionId=signin(.*?)userSigninNew,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.cookie.js
-
 [MITM]
-hostname = %INSERT% tieba.baidu.com, *.video.qq.com, ms.jr.jd.com, me-api.jd.com, api.m.jd.com, daojia.jd.com
+hostname = %INSERT% ms.jr.jd.com, me-api.jd.com, api.m.jd.com
