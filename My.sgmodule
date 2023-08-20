@@ -1,7 +1,6 @@
 #!name=My sgmodule
 #!desc=✨个人使用模块💕
 
-
 [General]
 force-http-engine-hosts = %APPEND% boxjs.net
 
@@ -21,9 +20,9 @@ nf_rating_season.js = type=http-response,pattern=^https?:\/\/ios(-.*)?\.prod\.ft
 # Boxjs测试版
 Rewrite: BoxJs = type=http-request,pattern=^https?:\/\/boxjs\.net,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120
 
-# 豆瓣网页优化
+# > 茶杯狐、Libvio 流媒体
 茶杯狐 = type=http-response,pattern=^https://m.douban.com/movie/subject/.+,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Scripts/raw/master/douban.js
-douban
+# > Airtable 收藏
 Libvio  = type=http-request,pattern=^https://m.douban.com/movie/subject/.+\?seen=\d,requires-body=0,max-size=0,script-path=https://github.com/ddgksf2013/Scripts/raw/master/douban.js
 
 [URL Rewrite]
